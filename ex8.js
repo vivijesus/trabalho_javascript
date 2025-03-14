@@ -15,12 +15,21 @@ let nota3 = Number(nota());
 
 let media = (nota1+nota2+nota3)/3;
 
-if(media >= 6) {
-    console.log("Aluno Aprovado")
-}
-else{
-    console.log("Aluno Reprovado")
+if (media == 8 || media == 9 || media == 10) {
+    console.log('Aprovado com sucesso')
 }
 
+if (media == 6 || media === 8){
+    console.log('aprovado')
+}
 
+if (media == 3 || media === 6){
+    console.log('Recuperaçao')
+}
 
+if (media === 3){
+    console.log('Reprovado')
+}
+if (media === 0){
+    console.log('Desistente')
+}
